@@ -1,0 +1,25 @@
+version '3.2'
+
+services:
+
+  fpm:
+    volumes:
+      - .:/var/www/gianiaz
+    environment:
+      XDEBUG_CONFIG: "remote_host=172.28.0.1 remote_port=9090"
+      PHP_IDE_CONFIG: "serverName=Phantom"
+
+  nginx:
+    ports:
+      - "127.0.0.13:80:80"
+    volumes:
+      - ./web:/var/www/gianiaz/web
+      -
+  mysql:
+    environment:
+      - MYSQL_DATABASE=taste-and-test-your-code
+      - MYSQL_USER=mysql-username
+      - MYSQL_PASSWORD=super-password
+    expose:
+      - 3306
+
