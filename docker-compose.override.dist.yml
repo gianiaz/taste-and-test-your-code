@@ -13,8 +13,7 @@ services:
     ports:
       - "127.0.0.13:80:80"
     volumes:
-      - ./web:/var/www/gianiaz/web
-      -
+      - ./public:/var/www/gianiaz/public
   mysql:
     environment:
       - MYSQL_DATABASE=taste-and-test-your-code

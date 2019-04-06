@@ -16,3 +16,6 @@ docker-build-php:
 
 docker-build-nginx:
 	@docker build -t gianiaz/test-code-nginx . -f docker/nginx/Dockerfile
+
+docker-down:
+	@docker-compose down

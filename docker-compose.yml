@@ -1,6 +1,7 @@
-version '3.2'
+version: '3.2'
 
 services:
+
   fpm:
     image: gianiaz/test-code
 
@@ -13,6 +14,3 @@ services:
     image: mysql:5.7.24
     environment:
       - MYSQL_ALLOW_EMPTY_PASSWORD=1
-      - MYSQL_DATABASE=phantom
-      - MYSQL_USER=phantom
-      - MYSQL_PASSWORD=phantom
