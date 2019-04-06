@@ -9,6 +9,7 @@ services:
     image: gianiaz/test-code-nginx
     depends_on:
       - fpm
+      - mysql
 
   mysql:
     image: mysql:5.7.24
