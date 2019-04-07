@@ -1,4 +1,0 @@
-easy_admin:
-    entities:
-        - App\Entity\Ingredient
-        - App\Entity\IngredientCategory
