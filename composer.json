@@ -58,7 +58,11 @@
         }
     },
     "require-dev": {
+        "facile-it/paraunit": "^0.12.3",
+        "phpspec/prophecy": "^1.8",
+        "phpunit/phpunit": "^7.0",
         "symfony/dotenv": "4.2.*",
-        "symfony/profiler-pack": "^1.0"
+        "symfony/profiler-pack": "^1.0",
+        "symfony/test-pack": "^1.0"
     }
 }
