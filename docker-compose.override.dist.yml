@@ -19,6 +19,9 @@ services:
       - MYSQL_DATABASE=taste-and-test-your-code
       - MYSQL_USER=mysql-username
       - MYSQL_PASSWORD=super-password
+    # INIT DB SCRIPT
+    volumes:
+      - ./docker/mysql/data:/docker-entrypoint-initdb.d/
     expose:
       - 3306
 
