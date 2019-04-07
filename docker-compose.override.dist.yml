@@ -24,4 +24,5 @@ services:
       - ./docker/mysql/data:/docker-entrypoint-initdb.d/
     expose:
       - 3306
-
+  yarn:
+    user: '1000'

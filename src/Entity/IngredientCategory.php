@@ -5,6 +5,7 @@ namespace App\Entity;
 
 namespace App\Entity;
 
+use DateTimeInterface;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -27,6 +28,12 @@ class IngredientCategory
      */
     private $name;
 
+    /**
+     * @var DateTimeInterface
+     * @ORM\Column(type="datetime")
+     */
+    private $deletedAt;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -46,6 +53,18 @@ class IngredientCategory
     {
         return (string)$this->name;
     }
+
+    public function getDeletedAt(): ?DateTimeInterface
+    {
+        return $this->deletedAt;
+    }
+
+    public function setDeletedAt(DateTimeInterface $deletedAt): void
+    {
+        $this->deletedAt = $deletedAt;
+    }
+
+
 
 
 }

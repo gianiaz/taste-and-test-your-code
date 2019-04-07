@@ -15,3 +15,12 @@ services:
     image: mysql:5.7.24
     environment:
       - MYSQL_ALLOW_EMPTY_PASSWORD=1
+
+  yarn:
+    image: node:8-alpine
+    working_dir: /var/www/gianiaz
+    volumes:
+      - .:/var/www/gianiaz
+    environment:
+      YARN_CACHE_FOLDER: /var/www/gianiaz/var/cache/yarn
+    command: ['yarn', 'install']
