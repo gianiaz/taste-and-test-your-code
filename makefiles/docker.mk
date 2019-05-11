@@ -2,7 +2,7 @@ help-docker:
 	@echo ""
 	@echo "  ${boldunderline}DOCKER COMMANDS${normal}  "
 	@echo ""
-	@echo "      ${bold}restart{normal} - restart php container "
+	@echo "      ${bold}restart${normal} - restart php container "
 	@echo ""
 	@echo "      ${bold}docker-build-php${normal} - Build and tag the PHP Docker image"
 	@echo ""
@@ -19,3 +19,6 @@ docker-build-nginx:
 
 docker-down:
 	@docker-compose down
+
+stop:
+	@docker-compose stop

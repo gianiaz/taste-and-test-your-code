@@ -27,6 +27,7 @@ help: quickstart
 	@make help-encore
 	@make help-symfony
 	@make help-test
+	@make help-quality
 	@make help-utils
 	@echo ""
 
@@ -45,6 +46,7 @@ include makefiles/composer.mk
 include makefiles/docker.mk
 include makefiles/encore.mk
 include makefiles/symfony.mk
+include makefiles/quality.mk
 include makefiles/test.mk
 include makefiles/utils.mk
 

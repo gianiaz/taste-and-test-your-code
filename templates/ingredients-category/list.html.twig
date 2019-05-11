@@ -16,10 +16,10 @@
             <tbody>
             {% for category in categories %}
                 <tr>
-                    <td>1,001</td>
-                    <td>Lorem</td>
-                    <td> <a href="#" class="btn btn-primary">Modifica </a></td>
-                    <td> <a href="#" class="btn btn-danger">Cancella</a></td>
+                    <td>{{ category.id }}</td>
+                    <td>{{ category.name }}</td>
+                    <td> <a href="{{ path('ingredients-category-edit', {category: category.id}) }}" class="btn btn-primary">Modifica </a></td>
+                    <td> <a href="{{ path('ingredients-category-delete', {category: category.id}) }}" class="btn btn-danger">Cancella</a></td>
                 </tr>
             {% endfor %}
         </table>
