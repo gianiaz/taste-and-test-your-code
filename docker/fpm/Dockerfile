@@ -1,8 +1,8 @@
 FROM php:7.3.2-fpm-alpine3.8
 
 RUN apk add --no-cache  \
-        nano \
         git \
+        nano \
         sudo \
         zsh \
     && docker-php-ext-configure pdo_mysql --with-pdo-mysql \

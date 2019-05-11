@@ -7,7 +7,7 @@ services:
       - .:/var/www/gianiaz
     environment:
       XDEBUG_CONFIG: "remote_host=172.28.0.1 remote_port=9090"
-      PHP_IDE_CONFIG: "serverName=Phantom"
+      PHP_IDE_CONFIG: "serverName=TasteYourCode"
 
   nginx:
     ports:
@@ -19,6 +19,10 @@ services:
       - MYSQL_DATABASE=taste-and-test-your-code
       - MYSQL_USER=mysql-username
       - MYSQL_PASSWORD=super-password
+    # INIT DB SCRIPT
+    volumes:
+      - ./docker/mysql/data:/docker-entrypoint-initdb.d/
     expose:
       - 3306
-
+  yarn:
+    user: '1000'

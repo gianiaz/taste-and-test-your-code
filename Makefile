@@ -24,8 +24,10 @@ quickstart: header
 help: quickstart
 	@make help-composer
 	@make help-docker
+	@make help-encore
 	@make help-symfony
 	@make help-test
+	@make help-quality
 	@make help-utils
 	@echo ""
 
@@ -42,7 +44,9 @@ setup: start composer-install db-setup
 
 include makefiles/composer.mk
 include makefiles/docker.mk
+include makefiles/encore.mk
 include makefiles/symfony.mk
+include makefiles/quality.mk
 include makefiles/test.mk
 include makefiles/utils.mk
 

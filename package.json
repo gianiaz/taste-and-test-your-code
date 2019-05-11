@@ -1,0 +1,27 @@
+{
+  "name": "Taste and Test your code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.26.0",
+    "webpack-notifier": "^1.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gianiaz/taste-and-test-your-code.git"
+  },
+  "author": "Giovanni B. Lenoci <gianiaz@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gianiaz/taste-and-test-your-code/issues"
+  },
+  "homepage": "https://github.com/gianiaz/taste-and-test-your-code#readme"
+}
